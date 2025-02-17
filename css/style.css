@@ -1,0 +1,295 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+}
+.main-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.header-wrapper {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.divider-header {
+  width: 1px;
+  height: 19px;
+  background-color: white;
+}
+.logo-wrapper .logotype {
+  text-decoration: none;
+  color: white;
+}
+.logo-text {
+  margin: 18px 80px;
+  font-family: Ubuntu;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.logo-text:hover {
+  color: #01813f;
+}
+.login,
+.entry {
+  color: white;
+  text-decoration: none;
+}
+.divider {
+  position: relative;
+  width: 72%;
+  border-bottom: solid 1px #f2f2f2;
+  margin: 30px 62px 11px;
+}
+.divider::before {
+  position: absolute;
+  content: "or";
+  background-color: #fff;
+  left: 47%;
+  top: -8px;
+  padding: 0px 7px;
+}
+
+.login {
+  margin-right: 80px;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.entry:hover {
+  color: #01813f;
+  transition: 0, 3s;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.svg-icon {
+  width: 23px;
+  height: 23px;
+}
+.nav-icon {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+}
+.icons {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.icon {
+  fill: white;
+}
+.icon:hover {
+  fill: #01813f;
+  transition: 0.3s;
+}
+.main-content {
+  display: flex;
+  height: calc(100%-58px);
+  justify-content: center;
+  margin-top: 54px;
+}
+.form-text {
+  box-sizing: border-box;
+  border: 1px solid #f2f2f2;
+  color: #434343;
+  border-radius: 4px;
+  width: 324px;
+  height: 44px;
+  padding-left: 19px;
+}
+.form-text::placeholder {
+  color: #bebebe;
+}
+.form-text:focus {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.21);
+  outline: 0;
+}
+.content-wrap {
+  position: fixed;
+  background-color: #ffffff;
+  width: 444px;
+  text-align: center;
+}
+.content-wrap::before {
+  display: block;
+  position: absolute;
+  border: solid 1px #3cb878;
+  background: #3cb878;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 0;
+  top: 29px;
+}
+.main-form {
+  display: flex;
+  justify-content: center;
+}
+.main-form-text {
+  display: flex;
+  gap: 216px;
+}
+.sign-up {
+  display: inline-block;
+  padding-top: 11px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.log-in {
+  align-self: center;
+  color: #3cb878;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: left;
+  transition: 0.5s;
+}
+.log-in:hover {
+  color: #01813f;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+input {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.form-content {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+.social-icon-f {
+  padding: 0 15px;
+  border-right: 1px solid rgba(10, 22, 47, 0.1);
+}
+.social-icon-g {
+  padding: 0 15px;
+  border-right: 1px solid rgba(10, 22, 47, 0.1);
+}
+
+.btn-fb {
+  position: relative;
+  background-color: rgba(48, 93, 184, 1);
+  width: 160px;
+  transition: 0.5s;
+}
+.btn-fb:hover {
+  background-color: rgba(2, 34, 99, 1);
+  transition: 0.3s;
+}
+.btn-g {
+  background-color: rgba(223, 74, 50, 1);
+  width: 160px;
+  transition: 0.5s;
+}
+.btn-g:hover {
+  background-color: rgba(171, 31, 9, 1);
+  transition: 0.3s;
+}
+.fb,
+.g {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+}
+.text-btn {
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.btn-fb,
+.btn-g {
+  height: 46px;
+  border: none;
+  border-radius: 4px;
+}
+.divider-btn {
+  width: 1px;
+  height: 28px;
+  background-color: #2b0d09;
+}
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox + label::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-checkbox:checked + label::before {
+  background-image: url(../img/checkbox.svg);
+}
+.form-content label {
+  margin-right: 28px;
+  margin-bottom: 22px;
+}
+.form-buttons {
+  padding-bottom: 35px;
+}
+.green-btn {
+  width: 324px;
+  background-color: #3cb878cc;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 100px;
+  transition: 0.5s;
+}
+.green-btn:hover {
+  background-color: #01813f;
+  transition: 0.3s;
+}
+.consent {
+  color: #3cb878cc;
+  text-decoration: none;
+}
+.text-consent {
+  padding-left: 11px;
+}
+.consent:hover {
+  color: #01813f;
+  text-decoration: underline;
+  transition: 0.3s;
+}
